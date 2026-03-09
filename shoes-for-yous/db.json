@@ -27,6 +27,118 @@
       "brand": "Nike",
       "description": "Basketball inspired style",
       "price": 110
+    },
+    {
+      "id": 5,
+      "name": "Gel-Kayano",
+      "brand": "Asics",
+      "description": "Stability running shoe with cushioning",
+      "price": 150
+    },
+    {
+      "id": 6,
+      "name": "Classic Leather",
+      "brand": "Reebok",
+      "description": "Retro casual sneaker",
+      "price": 85
+    },
+    {
+      "id": 7,
+      "name": "Zoom Fly",
+      "brand": "Nike",
+      "description": "Fast and responsive running shoe",
+      "price": 160
+    },
+    {
+      "id": 8,
+      "name": "Superstar",
+      "brand": "Adidas",
+      "description": "Iconic street-style sneaker",
+      "price": 100
+    },
+    {
+      "id": 9,
+      "name": "RS-X",
+      "brand": "Puma",
+      "description": "Bold design with retro vibe",
+      "price": 130
+    },
+    {
+      "id": 10,
+      "name": "Old Skool",
+      "brand": "Vans",
+      "description": "Skateboard classic low-top",
+      "price": 70
+    },
+    {
+      "id": 11,
+      "name": "Chuck Taylor",
+      "brand": "Converse",
+      "description": "Timeless high-top sneaker",
+      "price": 65
+    },
+    {
+      "id": 12,
+      "name": "Air Max 270",
+      "brand": "Nike",
+      "description": "Max cushioning and sleek design",
+      "price": 150
+    },
+    {
+      "id": 13,
+      "name": "RS Dreamer",
+      "brand": "Puma",
+      "description": "Basketball-inspired high performance",
+      "price": 140
+    },
+    {
+      "id": 14,
+      "name": "Nano X",
+      "brand": "Reebok",
+      "description": "Cross-training shoe for versatility",
+      "price": 130
+    },
+    {
+      "id": 15,
+      "name": "Air Force 1",
+      "brand": "Nike",
+      "description": "Iconic everyday sneaker",
+      "price": 120
+    },
+    {
+      "id": 16,
+      "name": "Gazelle",
+      "brand": "Adidas",
+      "description": "Classic low-profile sneaker",
+      "price": 90
+    },
+    {
+      "id": 17,
+      "name": "Pegasus Trail",
+      "brand": "Nike",
+      "description": "Lightweight trail running shoe",
+      "price": 130
+    },
+    {
+      "id": 18,
+      "name": "Court Royale",
+      "brand": "Nike",
+      "description": "Clean retro tennis-inspired sneaker",
+      "price": 85
+    },
+    {
+      "id": 19,
+      "name": "Club C 85",
+      "brand": "Reebok",
+      "description": "Classic tennis silhouette",
+      "price": 80
+    },
+    {
+      "id": 20,
+      "name": "Authentic",
+      "brand": "Vans",
+      "description": "Simple and durable low-top sneaker",
+      "price": 60
     }
   ]
 }
