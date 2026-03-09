@@ -1,10 +1,24 @@
-import { products } from "../data/products";
+import { useState } from "react";
 import ProductCard from "../components/ProductCard";
 
-function Shop() {
+function Shop({ products }) {
+    const [search, setSearch] = useState("");
+
+    const filteredProducts = products.filter((product) =>
+        product.name.toLowerCase().includes(search.toLowerCase()) ||
+        product.brand.toLowerCase().includes(search.toLowerCase())
+    );
+    
     return (
         <div>
             <h2>Shop</h2>
+
+            <input  
+                type="text"
+                placeholder="Search shoes..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+            />
 
             <div 
                 style={{
@@ -14,7 +28,7 @@ function Shop() {
                     marginTop: "20px"
                 }}
             >
-                {products.map((product) => (
+                {filteredProducts.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}
             </div>
