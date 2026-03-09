@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Admin({ products, setProducts }) {
+function Admin({ products = [], setProducts }) {
     const [name, setName] = useState("");
     const [brand, setBrand] = useState("");
     const [description, setDescription] = useState("");
@@ -8,13 +8,14 @@ function Admin({ products, setProducts }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!name || !brand || !description || !price) return;
 
         const newProduct = {
-            id: products.length + 1,
+            id: Date.now(),
             name,
             brand,
             description,
-            price: Number(price)
+            price: Number(price),
         };
 
         setProducts([...products, newProduct]);
@@ -23,6 +24,14 @@ function Admin({ products, setProducts }) {
         setBrand("");
         setDescription("");
         setPrice("");
+    };
+
+    const handlePriceChange = (id, newPrice) => {
+        setProducts(
+            products.map((p) =>
+                p.id === id ? { ...p, price: Number(newPrice) } : p
+            )
+        );
     };
 
     return (
@@ -60,6 +69,22 @@ function Admin({ products, setProducts }) {
 
                 <button type="submit">Add Shoe</button>
             </form>
+
+            <h3>Current Products</h3>
+            <ul>
+                {products.map((product) => (
+                    <li key={product.id} style={{ marginBottom: "1rem" }}>
+                        <strong>{product.name}</strong> - {product.brand} - ${product.price}
+                        <br />
+                        <input
+                            type="number"
+                            value={product.price}
+                            onChange={(e) => handlePriceChange(product.id, e.target.value)                                
+                            }
+                        />
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 }
